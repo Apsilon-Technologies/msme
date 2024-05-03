@@ -38,9 +38,10 @@
         border: 1px solid #ccc;
         box-shadow: 0 0 10px rgba(106, 105, 105, 0.1);
         z-index: 1000;
-        height: 60vh;
+        height: 80vh;
         width: 80vw;
         border-radius: 10px;
+        overflow: auto;
       }
 
       .popup2 {
@@ -54,9 +55,10 @@
         border: 1px solid #ccc;
         box-shadow: 0 0 10px rgba(106, 105, 105, 0.1);
         z-index: 1000;
-        height: 60vh;
+        height: 80vh;
         width: 80vw;
         border-radius: 10px;
+        overflow: auto;
       }
       .popup3 {
         display: none;
@@ -69,9 +71,75 @@
         border: 1px solid #ccc;
         box-shadow: 0 0 10px rgba(106, 105, 105, 0.1);
         z-index: 1000;
-        height: 60vh;
+        height: 80vh;
         width: 80vw;
         border-radius: 10px;
+        overflow: auto;
+      }
+
+      .popup4 {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        padding: 20px;
+        border: 1px solid #ccc;
+        box-shadow: 0 0 10px rgba(106, 105, 105, 0.1);
+        z-index: 1000;
+        height: 80vh;
+        width: 80vw;
+        border-radius: 10px;
+        overflow: auto;
+      }
+      .popup5 {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        padding: 20px;
+        border: 1px solid #ccc;
+        box-shadow: 0 0 10px rgba(106, 105, 105, 0.1);
+        z-index: 1000;
+        height: 90vh;
+        width: 90vw;
+        border-radius: 10px;
+        overflow: auto;
+      }
+      .popup6 {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        padding: 20px;
+        border: 1px solid #ccc;
+        box-shadow: 0 0 10px rgba(106, 105, 105, 0.1);
+        z-index: 1000;
+        height: 80vh;
+        width: 80vw;
+        border-radius: 10px;
+        overflow: auto;
+      }
+
+      .modal-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(
+          0,
+          0,
+          0,
+          0.8
+        ); /* Adjust transparency as needed */
+        z-index: 999; /* Ensure modal overlay is behind the popup window */
+        display: none; /* Hide initially */
       }
       /* Close button */
       .popup-close {
@@ -87,6 +155,24 @@
         cursor: pointer;
       }
       .popup-close3 {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+      }
+      .popup-close4 {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+      }
+      .popup-close5 {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+      }
+      .popup-close6 {
         position: absolute;
         top: 10px;
         right: 10px;
@@ -108,9 +194,14 @@
       video {
         border-radius: 10px;
       }
-      /* .next-btn {
-        position: absolute;
-        top: 0px;
+      .center-div {
+        display: flex;
+        justify-content: center;
+      }
+
+      /* .list-items {
+        list-style-type: square !important;
+        background-color: red;
       } */
     </style>
     <!--
@@ -476,7 +567,7 @@ https://templatemo.com/tm-586-scholar
           </li>
         </ul> -->
         <!-- <div id="openPopup">Click me to open popup</div> -->
-
+        <div class="modal-overlay"></div>
         <!-- Popup container -->
         <div id="popup" class="popup">
           <span class="popup-close"
@@ -486,7 +577,7 @@ https://templatemo.com/tm-586-scholar
               aria-hidden="true"
             ></i
           ></span>
-          <h2 style="text-align: center; color: #353148">Web Developement.</h2>
+          <h2 style="text-align: center; color: #353148">EXPORT START-UP</h2>
           <div>
             <h3>Price:₹1430</h3>
           </div>
@@ -500,7 +591,9 @@ https://templatemo.com/tm-586-scholar
               aria-hidden="true"
             ></i
           ></span>
-          <h2 style="text-align: center; color: #353148">App Developement.</h2>
+          <h2 style="text-align: center; color: #353148">
+            EXPORT PRICING AND PAYMENT SYSTEMS
+          </h2>
           <div>
             <h3>Price:₹3532</h3>
           </div>
@@ -514,7 +607,160 @@ https://templatemo.com/tm-586-scholar
               aria-hidden="true"
             ></i
           ></span>
-          <h2 style="text-align: center; color: #353148">.Net Developement.</h2>
+          <h2 style="text-align: center; color: #353148">
+            EXPORT DOCUMENTATION
+          </h2>
+          <div>
+            <h3>Price:₹1800</h3>
+          </div>
+        </div>
+
+        <div id="popup4" class="popup4">
+          <span class="popup-close4"
+            ><i
+              style="font-size: 30px; color: red"
+              class="fa fa-window-close"
+              aria-hidden="true"
+            ></i
+          ></span>
+          <h2 style="text-align: center; color: #353148">
+            EXPORT BUSINESS PROCEDURES AND DOCUMENTATION.
+          </h2>
+          <div>
+            <h3>Price:₹1430</h3>
+          </div>
+        </div>
+
+        <div id="popup5" class="popup5">
+          <span class="popup-close5"
+            ><i
+              style="font-size: 30px; color: red"
+              class="fa fa-window-close"
+              aria-hidden="true"
+            ></i
+          ></span>
+          <h2
+            style="
+              text-align: center;
+              color: #353148;
+              margin-top: 20px;
+              margin-bottom: 20px;
+            "
+          >
+            INTERNATIONAL CARGO CLEARANCE AND LOGISTICS OPERATIONS.
+          </h2>
+          <p style="text-align: center">
+            WIDE COVERAGE / UPDATED SYLLABUS / PRACTICAL DEMOS / EXPERIENCED
+            FACULTY
+          </p>
+          <div>
+            <div style="display: flex; justify-content: space-around">
+              <div style="padding: 10px">
+                <h3>Duration</h3>
+                <p>8 DAYS</p>
+              </div>
+              <div style="padding: 10px">
+                <h3>Mode</h3>
+                <p>ONLINE</p>
+                <p>LIVE</p>
+                <p>INTERACTIVE</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <!-- <div>
+              <div style="text-align: center">
+                <h4>Course Duration</h4>
+
+                <p><b>(08-05-2024)</b> to <b>(15-05-2024) </b></p>
+              </div>
+              <div style="text-align: center">
+                <h4>Class Timings: Sunday to Sunday</h4>
+                <p><b>(8.00 PM)</b> to <b>(10.00 PM) </b></p>
+              </div>
+            </div> -->
+
+            <div class="container">
+              <h2 style="text-align: center">SYLLABUS</h2>
+
+              <div class="row">
+                <div class="col-md-6 mt-5">
+                  <div>
+                    <h3>Customs Clearance</h3>
+                    <ul class="list-items">
+                      <li>1. Export Clearance Procedures</li>
+                      <li>2. Import Clearance Procedures</li>
+                      <li>3. Customs Duty Calculations</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-6 mt-5">
+                  <div>
+                    <h3>International Transportation</h3>
+                    <ul class="list-items">
+                      <li>1. Marine/ Air/ Rail / Road Transportaion</li>
+                      <li>2. Containerisation / Safe Cargo Handling</li>
+                      <li>3. Dangerous Goods Regulations</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 mt-5">
+                  <div>
+                    <h3>Rules & Regulations</h3>
+                    <ul class="list-items">
+                      <li>1. Customs Valuation Rules</li>
+                      <li>2. Tariff Classification</li>
+                      <li>3. Customs Broker Licensing</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="col-md-6 mt-5">
+                  <div>
+                    <h3>Compliance & Documentation</h3>
+                    <ul class="list-items">
+                      <li>1. Prohibited & Restricted Goods</li>
+                      <li>2. Documents Required for Clearance</li>
+                      <li>3. Foreign Trade Policy Schemes</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div>
+                <h2
+                  style="
+                    text-align: center;
+                    margin: 50px 0 50px;
+                    color: white;
+                    background-color: #353148;
+                    padding: 10px 0 10px;
+                    border-radius: 5px;
+                  "
+                >
+                  Course Fees-Rs.5900
+                  <p style="color: white">(include GST)</p>
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="popup6" class="popup6">
+          <span class="popup-close6"
+            ><i
+              style="font-size: 30px; color: red"
+              class="fa fa-window-close"
+              aria-hidden="true"
+            ></i
+          ></span>
+          <h2 style="text-align: center; color: #353148">
+            PROFESSIONAL CERTIFICATE CERTIFICATE PROGRAM ON EXPORT DOCUMENTATION
+          </h2>
           <div>
             <h3>Price:₹1800</h3>
           </div>
@@ -528,14 +774,14 @@ https://templatemo.com/tm-586-scholar
             <div class="events_item" id="show-popup" style="cursor: pointer">
               <div class="thumb">
                 <div><img src="assets/images/course-01.jpg" alt="" /></div>
-                <span class="category">Webdesign</span>
+                <!-- <span class="category">EXPORT START-UP</span> -->
                 <span class="price"
                   ><h6><em>₹</em>160</h6></span
                 >
               </div>
               <div class="down-content">
-                <span class="author">Stella Blair</span>
-                <h4>Learn Web Design</h4>
+                <!-- <span class="author">Stella Blair</span> -->
+                <h4>EXPORT START-UP</h4>
               </div>
             </div>
           </div>
@@ -545,14 +791,14 @@ https://templatemo.com/tm-586-scholar
             <div class="events_item" id="show-popup2" style="cursor: pointer">
               <div class="thumb">
                 <div><img src="assets/images/course-02.jpg" alt="" /></div>
-                <span class="category">Development</span>
+                <!-- <span class="category">Development</span> -->
                 <span class="price"
                   ><h6><em>$</em>340</h6></span
                 >
               </div>
               <div class="down-content">
-                <span class="author">Cindy Walker</span>
-                <h4>Web Development Tips</h4>
+                <!-- <span class="author">Cindy Walker</span> -->
+                <h4>EXPORT PRICING AND PAYMENT SYSTEMS</h4>
               </div>
             </div>
           </div>
@@ -562,14 +808,121 @@ https://templatemo.com/tm-586-scholar
             <div class="events_item" id="show-popup3" style="cursor: pointer">
               <div class="thumb">
                 <div><img src="assets/images/course-03.jpg" alt="" /></div>
-                <span class="category">Wordpress</span>
+                <!-- <span class="category">Wordpress</span> -->
                 <span class="price"
                   ><h6><em>$</em>640</h6></span
                 >
               </div>
               <div class="down-content">
+                <!-- <span class="author">David Hutson</span> -->
+                <h4>EXPORT DOCUMENTATION</h4>
+              </div>
+            </div>
+          </div>
+          <!-- <div
+            class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 development"
+          >
+            <div class="events_item">
+              <div class="thumb">
+                <div><img src="assets/images/course-04.jpg" alt="" /></div>
+                <span class="category">Development</span>
+                <span class="price"
+                  ><h6><em>$</em>450</h6></span
+                >
+              </div>
+              <div class="down-content">
+                <span class="author">Stella Blair</span>
+                <h4>Online Learning Steps</h4>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 wordpress development"
+          >
+            <div class="events_item">
+              <div class="thumb">
+                <div><img src="assets/images/course-05.jpg" alt="" /></div>
+                <span class="category">Wordpress</span>
+                <span class="price"
+                  ><h6><em>$</em>320</h6></span
+                >
+              </div>
+              <div class="down-content">
+                <span class="author">Sophia Rose</span>
+                <h4>Be a WordPress Master</h4>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 wordpress design"
+          >
+            <div class="events_item">
+              <div class="thumb">
+                <div><img src="assets/images/course-06.jpg" alt="" /></div>
+                <span class="category">Webdesign</span>
+                <span class="price"
+                  ><h6><em>$</em>240</h6></span
+                >
+              </div>
+              <div class="down-content">
                 <span class="author">David Hutson</span>
-                <h4>Latest Web Trends</h4>
+                <h4>Full Stack Developer</h4>
+              </div>
+            </div>
+          </div> -->
+        </div>
+        <div class="row event_box">
+          <div
+            class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 design"
+          >
+            <div class="events_item" id="show-popup4" style="cursor: pointer">
+              <div class="thumb">
+                <div><img src="assets/images/course-01.jpg" alt="" /></div>
+                <!-- <span class="category">EXPORT START-UP</span> -->
+                <span class="price"
+                  ><h6><em>₹</em>160</h6></span
+                >
+              </div>
+              <div class="down-content">
+                <!-- <span class="author">Stella Blair</span> -->
+                <h4>EXPORT BUSINESS PROCEDURES AND DOCUMENTATION</h4>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 development"
+          >
+            <div class="events_item" id="show-popup5" style="cursor: pointer">
+              <div class="thumb">
+                <div><img src="assets/images/course-02.jpg" alt="" /></div>
+                <!-- <span class="category">Development</span> -->
+                <span class="price"
+                  ><h6><em>$</em>340</h6></span
+                >
+              </div>
+              <div class="down-content">
+                <!-- <span class="author">Cindy Walker</span> -->
+                <h4>INTERNATIONAL CARGO CLEARANCE AND LOGISTICS OPERATIONS</h4>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 design wordpress"
+          >
+            <div class="events_item" id="show-popup6" style="cursor: pointer">
+              <div class="thumb">
+                <div><img src="assets/images/course-03.jpg" alt="" /></div>
+                <!-- <span class="category">Wordpress</span> -->
+                <span class="price"
+                  ><h6><em>$</em>640</h6></span
+                >
+              </div>
+              <div class="down-content">
+                <!-- <span class="author">David Hutson</span> -->
+                <h4>
+                  PROFESSIONAL CERTIFICATE CERTIFICATE PROGRAM ON EXPORT
+                  DOCUMENTATION
+                </h4>
               </div>
             </div>
           </div>
@@ -1090,25 +1443,54 @@ https://templatemo.com/tm-586-scholar
       // Function to open the popup
       function openPopup() {
         document.getElementById("popup").style.display = "block";
+        document.querySelector(".modal-overlay").style.display = "block";
       }
       function openPopup2() {
         document.getElementById("popup2").style.display = "block";
+        document.querySelector(".modal-overlay").style.display = "block";
       }
       function openPopup3() {
         document.getElementById("popup3").style.display = "block";
+        document.querySelector(".modal-overlay").style.display = "block";
+      }
+      function openPopup4() {
+        document.getElementById("popup4").style.display = "block";
+        document.querySelector(".modal-overlay").style.display = "block";
+      }
+      function openPopup5() {
+        document.getElementById("popup5").style.display = "block";
+        document.querySelector(".modal-overlay").style.display = "block";
+      }
+      function openPopup6() {
+        document.getElementById("popup6").style.display = "block";
+        document.querySelector(".modal-overlay").style.display = "block";
       }
 
       // Function to close the popup
       function closePopup() {
         document.getElementById("popup").style.display = "none";
+        document.querySelector(".modal-overlay").style.display = "none";
       }
       function closePopup2() {
         document.getElementById("popup2").style.display = "none";
+        document.querySelector(".modal-overlay").style.display = "none";
       }
       function closePopup3() {
         document.getElementById("popup3").style.display = "none";
+        document.querySelector(".modal-overlay").style.display = "none";
       }
-
+      function closePopup4() {
+        document.getElementById("popup4").style.display = "none";
+        document.querySelector(".modal-overlay").style.display = "none";
+      }
+      function closePopup5() {
+        document.getElementById("popup5").style.display = "none";
+        document.querySelector(".modal-overlay").style.display = "none";
+      }
+      function closePopup6() {
+        document.getElementById("popup6").style.display = "none";
+        document.querySelector(".modal-overlay").style.display = "none";
+      }
       // Event listener to open the popup when clicking on the div
       document.getElementById("show-popup").addEventListener("click", (e) => {
         console.log("click", e);
@@ -1121,6 +1503,18 @@ https://templatemo.com/tm-586-scholar
       document.getElementById("show-popup3").addEventListener("click", (e) => {
         console.log("click", e);
         openPopup3();
+      });
+      document.getElementById("show-popup4").addEventListener("click", (e) => {
+        console.log("click", e);
+        openPopup4();
+      });
+      document.getElementById("show-popup5").addEventListener("click", (e) => {
+        console.log("click", e);
+        openPopup5();
+      });
+      document.getElementById("show-popup6").addEventListener("click", (e) => {
+        console.log("click", e);
+        openPopup6();
       });
 
       // Event listener to close the popup when clicking on the close button
@@ -1135,6 +1529,18 @@ https://templatemo.com/tm-586-scholar
       document
         .querySelector(".popup-close3")
         .addEventListener("click", closePopup3);
+
+      document
+        .querySelector(".popup-close4")
+        .addEventListener("click", closePopup4);
+
+      document
+        .querySelector(".popup-close5")
+        .addEventListener("click", closePopup5);
+
+      document
+        .querySelector(".popup-close6")
+        .addEventListener("click", closePopup6);
     </script>
     <script>
       document.querySelectorAll("video").forEach((video) => {

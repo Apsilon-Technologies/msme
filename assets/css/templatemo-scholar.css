@@ -677,16 +677,19 @@ Banner Style
 }
 
 .main-banner .item-1 {
-  background-image: url(../images/Institute/Image-1.jpeg);
+  background-image: url(../images/Institute/Image-4.jpeg);
+  /* height: 70vh; */
   
 }
 
 .main-banner .item-2 {
-  background-image: url(../images/Institute/Image-2.jpeg);
+  background-image: url(../images/Institute/Image-8.jpeg);
+  /* height: 70vh; */
 }
 
 .main-banner .item-3 {
   background-image: url(../images/Institute/Image-3.jpeg);
+  /* height: 70vh; */
 }
 
 .main-banner .item {
