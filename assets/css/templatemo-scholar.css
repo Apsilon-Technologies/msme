@@ -678,18 +678,18 @@ Banner Style
 
 .main-banner .item-1 {
   background-image: url(../images/Institute/Image-4.jpeg);
-  /* height: 70vh; */
+  height: 70vh;
   
 }
 
 .main-banner .item-2 {
   background-image: url(../images/Institute/Image-8.jpeg);
-  /* height: 70vh; */
+  height: 70vh;
 }
 
 .main-banner .item-3 {
   background-image: url(../images/Institute/Image-3.jpeg);
-  /* height: 70vh; */
+  height: 70vh;
 }
 
 .main-banner .item {
@@ -1350,7 +1350,7 @@ Events Style
   border-radius: 25px;
   max-width: 260px;
   left: 0;
-  top: -70px;
+  top: -50px;
 }
 
 .events .item ul li {
