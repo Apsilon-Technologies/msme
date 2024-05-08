@@ -673,22 +673,27 @@ Banner Style
   background-position: right bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 170px 0px 120px 0px;
+  padding: 130px 0px 120px 0px;
 }
 
 .main-banner .item-1 {
-  background-image: url(../images/Institute/output-onlinepngtools.png);
-  height: 70vh;
+  background-image: url(../images/Institute/opacity/luxa.org-opacity-changed-Image-4.jpeg);
+  height: 80vh;
 }
 
 .main-banner .item-2 {
-  background-image: url(../images/Institute/output-onlinepngtools\ \(2\).png);
-  height: 70vh;
+  background-image: url(../images/Institute/opacity/luxa.org-opacity-changed-Image-8.jpeg);
+  height: 80vh;
 }
 
 .main-banner .item-3 {
-  background-image: url(../images/Institute/output-onlinepngtools\ \(3\).png);
-  height: 70vh;
+  background-image: url(../images/Institute/opacity/luxa.org-opacity-changed-training-5.jpeg);
+  height: 80vh;
+}
+
+.main-banner .item-4 {
+  background-image: url(../images/Institute/opacity/luxa.org-opacity-changed-Image-10.jpeg);
+  height: 80vh;
 }
 
 .main-banner .item {
@@ -697,9 +702,7 @@ Banner Style
   background-size: cover;
   border-radius: 25px;
   padding: 100px 100px;
-  
   margin-left: 130px;
- 
 }
 
 .main-banner .item span.category {
