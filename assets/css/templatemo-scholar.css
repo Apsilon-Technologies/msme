@@ -667,7 +667,7 @@ Banner Style
 */
 
 .main-banner {
-  /* background-image: url(../images/banner-bg.jpg); */
+  background-image: url(../images/ban.png);
 
   background-color:#353148 ;
   background-position: right bottom;
@@ -677,18 +677,17 @@ Banner Style
 }
 
 .main-banner .item-1 {
-  background-image: url(../images/Institute/Image-4.jpeg);
+  background-image: url(../images/Institute/output-onlinepngtools.png);
   height: 70vh;
-  
 }
 
 .main-banner .item-2 {
-  background-image: url(../images/Institute/Image-8.jpeg);
+  background-image: url(../images/Institute/output-onlinepngtools\ \(2\).png);
   height: 70vh;
 }
 
 .main-banner .item-3 {
-  background-image: url(../images/Institute/TRAINING/training-5.jpeg);
+  background-image: url(../images/Institute/output-onlinepngtools\ \(3\).png);
   height: 70vh;
 }
 
@@ -698,7 +697,9 @@ Banner Style
   background-size: cover;
   border-radius: 25px;
   padding: 100px 100px;
+  
   margin-left: 130px;
+ 
 }
 
 .main-banner .item span.category {
@@ -1649,13 +1650,15 @@ footer {
   vertical-align: middle;
   min-height: 250px;
   border-radius: 10px 10px 0px 0px;
+  padding: 50px 0 50px;
 }
 
 footer p {
-  text-align: center;
-  line-height: 150px;
+  /* text-align: center;
+  line-height: 150px; */
   color: #fff;
-  font-weight: 400;
+  /* font-weight: 400; */
+ 
 }
 
 footer p a {
