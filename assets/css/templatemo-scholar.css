@@ -560,6 +560,10 @@ Header Style
 }
 
 @media (max-width: 767px) {
+.popup{
+  width: 100vw;
+}
+
   .background-header .main-nav .nav,
   .header-area .main-nav .nav {
     background-color: #d9c39e;
@@ -1699,6 +1703,24 @@ body {
 }
 
 @media (max-width: 767px) {
+  .popup{
+    width: 100vw;
+  }
+  .popup2{
+    width: 100vw;
+  }
+  .popup3{
+    width: 100vw;
+  }
+  .popup4{
+    width: 100vw;
+  }
+  .popup5{
+    width: 100vw;
+  }
+  .popup6{
+    width: 100vw;
+  }
   .header-area {
     top: 0px;
   }
