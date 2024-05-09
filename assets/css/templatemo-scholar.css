@@ -562,22 +562,22 @@ Header Style
 @media (max-width: 767px) {
 
 .popup{
-  width: 100vw;
+  width: 100vw !important;
 }
 .popup2{
-  width: 100vw;
+  width: 100vw !important;
 }
 .popup3{
-  width: 100vw;
+  width: 100vw !important;
 }
 .popup4{
-  width: 100vw;
+  width: 100vw !important;
 }
 .popup5{
-  width: 100vw;
+  width: 100vw !important;
 }
 .popup6{
-  width: 100vw;
+  width: 100vw !important;
 }
 
   .background-header .main-nav .nav,
